@@ -52,8 +52,7 @@ public class SecondActivity extends AppCompatActivity {
 
                     Uri uri = getContentResolver().insert(
                             ContactDetailProvider.CONTENT_URI, values);
-                    Toast.makeText(getBaseContext(),
-                            uri.toString(), Toast.LENGTH_LONG).show();
+
                     Preferences.setBooleanPreference(SecondActivity.this, "firstTime",true);
                 }
             }
